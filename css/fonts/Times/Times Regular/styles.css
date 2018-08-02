@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: 'Times';
+  src: url('Times.eot?#iefix') format('embedded-opentype'),  url('Times.woff') format('woff'), url('Times.ttf')  format('truetype'), url('Times.svg#Times') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
