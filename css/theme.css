@@ -451,17 +451,19 @@ header {
   }
 }
 
-.lead-navigation .navbar-dark .navbar-nav .nav-link {
-  color: #fff !important;
-  background-color: #0079BE;
+.navbar-dark .navbar-nav {
+  width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  display: block;
   transition: 0.3s ease;
   position: relative;
 }
-.lead-navigation .navbar-dark .toggle-submenu {
+.navbar-dark .toggle-submenu {
   position: absolute;
   right: 0;
   top: 0;
-  width: 40px;
+  width: 20px;
   height: 36px;
   line-height: 36px;
   text-align: center;
@@ -469,38 +471,43 @@ header {
   z-index: 2;
   transition: 0.5s linear;
 }
-.lead-navigation .navbar-dark .submenu {
+.navbar-dark .submenu {
   background: #fff;
   display: none;
 }
-.lead-navigation .navbar-dark .submenu a {
+.navbar-dark .submenu a {
   display: block;
   padding: 5px;
-  color: #454F5A;
+  color: #454F5A !important;
   position: relative;
+  width: 200px;
+  text-transform: none;
 }
-.lead-navigation .navbar-dark .submenu a.active {
+.navbar-dark .submenu a.active {
   color: #57ACFA;
 }
-.lead-navigation .navbar-dark .navbar-toggler-icon {
+.navbar-dark .submenu a:hover {
+  text-decoration: none;
+}
+.navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247, 204, 75, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-.lead-navigation .navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler {
   border-color: #fff;
   padding: 8px;
   overflow: hidden;
 }
-.lead-navigation .navbar-dark .navbar-toggler.active span:nth-of-type(2) {
+.navbar-dark .navbar-toggler.active span:nth-of-type(2) {
   transform: translateX(-100px);
   opacity: 0;
 }
-.lead-navigation .navbar-dark .navbar-toggler.active span:first-of-type {
+.navbar-dark .navbar-toggler.active span:first-of-type {
   transform: rotate(45deg) translate(5px, 5px);
 }
-.lead-navigation .navbar-dark .navbar-toggler.active span:last-of-type {
+.navbar-dark .navbar-toggler.active span:last-of-type {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-.lead-navigation .navbar-dark .navbar-toggler span {
+.navbar-dark .navbar-toggler span {
   display: block;
   height: 2px;
   width: 25px;
@@ -508,18 +515,38 @@ header {
   background: #fff;
   transition: 0.4s linear;
 }
-.lead-navigation .navbar-dark .navbar-toggler span:last-of-type {
+.navbar-dark .navbar-toggler span:last-of-type {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .navbar-dark .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar-dark .submenu {
+    position: absolute;
+    min-width: 150px;
+    right: 0;
+    top: 100%;
+    background: #fff;
+  }
+}
 @media (min-width: 992px) {
-  .lead-navigation .navbar-dark {
+  .navbar-dark {
     font-size: 14px;
   }
-  .lead-navigation .navbar-dark span {
+  .navbar-dark span {
     width: 10px;
   }
-  .lead-navigation .navbar-dark .nav-item a {
+  .navbar-dark .nav-item a {
     padding: 8px 6px;
+  }
+}
+@media (min-width: 1350px) {
+  .navbar-dark {
+    font-size: 16px;
+  }
+  .navbar-dark .nav-item {
+    padding: 0 8px;
   }
 }
 

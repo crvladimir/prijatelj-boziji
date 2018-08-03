@@ -45,6 +45,31 @@ $(document).ready(function(){
         });
     }
     
+     //SHOW/HIDE SUBMENU
+    
+    $('.toggle-submenu').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        
+        $(this).parent().next('.submenu').slideToggle();
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 });
 
