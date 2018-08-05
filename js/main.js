@@ -59,19 +59,15 @@ $(document).ready(function () {
             loop: true,
             margin: 0,
             responsiveClass: true,
-            dots: false,
+            dots: true,
             autoplay: true,
-            nav: true,
-            navText:['<img src="img/oval.png">', '<img src="img/oval-blank.png">'],
+            nav: false,
             items: 1,
             autoplayHoverPause: true,
             responsive: {
 
                 0: {
                     items: 1
-                },
-                1300: {
-                    items: 2
                 }
             }
 

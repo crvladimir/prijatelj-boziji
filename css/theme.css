@@ -598,23 +598,31 @@ header {
   -webkit-tap-highlight-color: transparent;
   position: absolute;
   bottom: 0;
-  right: translateX(50%);
-  width: 100%;
 }
-.lead-slider-wrapper .owl-carousel .owl-nav button {
-  display: inline-block;
+.lead-slider-wrapper .owl-carousel .owl-dots .owl-dot.active span, .lead-slider-wrapper .owl-carousel .owl-dots .owl-dot:hover span {
+  background: #4A90E2 !important;
+  border: 1px solid #4A90E2 !important;
 }
-.lead-slider-wrapper .lead-aside {
+.lead-slider-wrapper .owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid #75859B;
+  width: 8px;
+  height: 8px;
+  border-radius: 24px;
+}
+
+.lead-aside {
   height: 380px;
   color: #fff;
 }
-.lead-slider-wrapper .lead-aside .aside-description {
+.lead-aside .aside-description {
   bottom: 0;
   right: 0;
   padding: 5px 10px;
 }
-.lead-slider-wrapper .lead-aside img {
+.lead-aside img {
   height: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=theme.css.map */
