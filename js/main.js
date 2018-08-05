@@ -53,10 +53,33 @@ $(document).ready(function () {
 
     //OWL CAROUSEL
 
+    if ($('.owl-carousel').length > 0) {
+
+        $('.lead-slider').owlCarousel({
+            loop: true,
+            margin: 0,
+            responsiveClass: true,
+            dots: false,
+            autoplay: true,
+            nav: true,
+            navText:['<img src="img/oval.png">', '<img src="img/oval-blank.png">'],
+            items: 1,
+            autoplayHoverPause: true,
+            responsive: {
+
+                0: {
+                    items: 1
+                },
+                1300: {
+                    items: 2
+                }
+            }
 
 
+        });
 
 
+    }
 
 
 
