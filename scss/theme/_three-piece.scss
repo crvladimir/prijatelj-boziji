@@ -15,7 +15,25 @@ $h4-color: #454F5A;
     }
     h4{
         color: $h4-color;
+        font-size: 20px;
     }
-    
+    h5{
+        font-size: 16px;
+    }
+    p{
+        margin-bottom: 0.5rem;
+    }
+    @media(min-width: 1350px){
+         h4{
+        
+        font-size: 24px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    p{
+        margin-bottom: 1rem;
+    }
+    }
 }
 

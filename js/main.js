@@ -27,19 +27,20 @@ $(document).ready(function () {
     //***********LEAD NAVIGATION **************
 
     $('.submenu a').click(function () {
-        $(this).addClass('active');
-    });
-
-    $('.navbar-toggler', '.submenu a').click(function () {
         $(this).toggleClass('active');
     });
 
+    
+
     //SHOW/HIDE SUBMENU
-    $('.toggle-submenu').click(function (e) {
+   
+if ( $(window).width() < 992) {      
+   $('.nav-link').click(function (e) {
         e.preventDefault();
         e.stopPropagation();
-        $(this).parent().next('.submenu').slideToggle();
+        $(this).next('.submenu').slideToggle();
     });
+} 
 
 
 

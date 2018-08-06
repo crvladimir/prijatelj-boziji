@@ -481,15 +481,20 @@ header {
 .navbar-dark .navbar-nav .nav-item {
   position: relative;
 }
+@media (min-width: 992px) {
+  .navbar-dark .navbar-nav .nav-item:hover .submenu {
+    display: block;
+  }
+}
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   transition: 0.3s ease;
   position: relative;
 }
 .navbar-dark .navbar-nav .nav-link:active {
-  font-weight: bold;
+  font-weight: bold !important;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .navbar-dark .navbar-nav {
     font-size: 16px;
     width: 100;
@@ -620,6 +625,9 @@ header {
 .lead-slider-wrapper .lead-slider-caption .lead-slider-date {
   color: #4A90E2;
 }
+.lead-slider-wrapper .owl-carousel h2 {
+  font-size: 24px;
+}
 .lead-slider-wrapper .owl-carousel .owl-nav {
   margin-top: 0;
   text-align: center;
@@ -637,6 +645,14 @@ header {
   width: 8px;
   height: 8px;
   border-radius: 24px;
+}
+@media (min-width: 992px) {
+  .lead-slider-wrapper .owl-carousel h2 {
+    font-size: 36px;
+  }
+  .lead-slider-wrapper .owl-carousel .lead-slider-date {
+    margin-bottom: 0;
+  }
 }
 
 .lead-aside {
@@ -671,6 +687,24 @@ header {
 }
 .three-piece h4 {
   color: #454F5A;
+  font-size: 20px;
+}
+.three-piece h5 {
+  font-size: 16px;
+}
+.three-piece p {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 1350px) {
+  .three-piece h4 {
+    font-size: 24px;
+  }
+  .three-piece h5 {
+    font-size: 20px;
+  }
+  .three-piece p {
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

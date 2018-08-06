@@ -7,8 +7,16 @@ $submenu-font-active: #57ACFA;
 .navbar-dark{
     font-size: 14px;
     .navbar-nav{
+
         .nav-item{
             position: relative;
+            @media(min-width: 992px){
+                &:hover{
+                    .submenu{
+                        display: block;
+                    }
+                } 
+            }
         }
         .nav-link{
             color: $lead-nav-font;
@@ -16,10 +24,10 @@ $submenu-font-active: #57ACFA;
             position: relative;
 
             &:active{
-                font-weight: bold;
+                font-weight: bold !important;
             }
         }
-        @media(min-width: 1200px){
+        @media(min-width: 1350px){
             font-size: 16px;
             width: 100;
         }
@@ -92,12 +100,13 @@ $submenu-font-active: #57ACFA;
             left: 0;
             top:100%;
 
+
         }
         @media(min-width: 1350px){
             min-width: 250px;
         }
     }
-
+    
 
 
 }
