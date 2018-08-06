@@ -30,17 +30,17 @@ $(document).ready(function () {
         $(this).toggleClass('active');
     });
 
-    
+
 
     //SHOW/HIDE SUBMENU
-   
-if ( $(window).width() < 992) {      
-   $('.nav-link').click(function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        $(this).next('.submenu').slideToggle();
-    });
-} 
+
+    if ($(window).width() < 992) {
+        $('.nav-link').click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).next('.submenu').slideToggle();
+        });
+    }
 
 
 
@@ -74,6 +74,39 @@ if ( $(window).width() < 992) {
 
 
         });
+
+
+        //LOOK SLIDER
+        if ($('.look-slider').length > 0) {
+            $('.look-slider').owlCarousel({
+                loop: true,
+                margin: 0,
+                responsiveClass: true,
+                dots: false,
+                autoplay: false,
+                nav: true,
+                navText: ['<img src="img/back-chevron-left.png">', '<img src="img/back-chevron-right.png">'],
+                items: 3,
+                autoplayHoverPause: true,
+                responsive: {
+
+                    0: {
+                        items: 3
+                    }
+                }
+
+
+            });
+        }
+
+
+
+
+
+
+
+
+
 
 
     }
