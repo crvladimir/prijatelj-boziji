@@ -9,8 +9,6 @@ $submenu-font-active: #57ACFA;
     .navbar-nav{
         .nav-item{
             position: relative;
-
-
         }
         .nav-link{
             color: $lead-nav-font;
@@ -95,6 +93,9 @@ $submenu-font-active: #57ACFA;
             top:100%;
 
         }
+        @media(min-width: 1350px){
+            min-width: 250px;
+        }
     }
 
 
@@ -103,7 +104,7 @@ $submenu-font-active: #57ACFA;
 //****NAVIGATION FORM****
 
 .lead-navigation{
-    margin: 16px 0;
+    margin-bottom: 16px;
 
     .form-control {
         display: block;

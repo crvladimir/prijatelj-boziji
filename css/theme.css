@@ -19,6 +19,26 @@ a {
   text-decoration: none !important;
 }
 
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
 /* Buzz Out */
 @-webkit-keyframes buzz {
   10% {
@@ -529,9 +549,14 @@ header {
     top: 100%;
   }
 }
+@media (min-width: 1350px) {
+  .navbar-dark .submenu {
+    min-width: 250px;
+  }
+}
 
 .lead-navigation {
-  margin: 16px 0;
+  margin-bottom: 16px;
 }
 .lead-navigation .form-control {
   display: block;
@@ -568,6 +593,9 @@ header {
   border-color: transparent;
 }
 
+.lead-slider-wrapper {
+  margin-bottom: 16px;
+}
 .lead-slider-wrapper .home {
   background-size: cover;
   background-repeat: no-repeat;
@@ -620,9 +648,29 @@ header {
   right: 0;
   padding: 5px 10px;
 }
+.lead-aside .aside-description p {
+  margin-bottom: 0;
+}
 .lead-aside img {
   height: 100%;
   display: block;
+}
+
+.three-piece {
+  font-size: 14px;
+}
+.three-piece article {
+  height: 171px;
+  padding: 15px;
+}
+.three-piece article figure {
+  margin: 0 0 0;
+}
+.three-piece article .media {
+  margin-bottom: 5px;
+}
+.three-piece h4 {
+  color: #454F5A;
 }
 
 /*# sourceMappingURL=theme.css.map */
