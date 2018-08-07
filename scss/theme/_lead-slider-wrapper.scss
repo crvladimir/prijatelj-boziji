@@ -37,7 +37,7 @@ $lead-slider-text-color: $white;
         h2{
             font-size: 24px;
         }
-        
+
         .owl-nav {
             margin-top: 0;
             text-align: center;
@@ -62,14 +62,7 @@ $lead-slider-text-color: $white;
                 }
             }
         }
-        @media(min-width: 992px){
-            h2{
-                font-size: 36px;
-            }
-            .lead-slider-date{
-                margin-bottom: 0;
-            }
-        }
+
     }
 
 }
@@ -93,6 +86,16 @@ $lead-slider-text-color: $white;
     }
 }
 
+@media(min-width: 992px){
+    .owl-carousel{
+        h2{
+            font-size: 36px;
+        }
+        .lead-slider-date{
+            margin-bottom: 0;
+        }
+    }
 
+}
 
 

@@ -10,27 +10,14 @@ $submenu-font-active: #57ACFA;
 
         .nav-item{
             position: relative;
-            @media(min-width: 992px){
-                &:hover{
-                    .submenu{
-                        display: block;
-                    }
-                } 
-            }
         }
         .nav-link{
             color: $lead-nav-font;
             transition: 0.3s ease;
             position: relative;
 
-            &:active{
-                font-weight: bold !important;
-            }
         }
-        @media(min-width: 1350px){
-            font-size: 16px;
-            width: 100;
-        }
+
 
     }
     //****NAVBAR TOGGLER****
@@ -93,20 +80,9 @@ $submenu-font-active: #57ACFA;
                 }
             }
         }
-        @media(min-width: 992px){
 
-            position: absolute;
-            min-width: 150px;
-            left: 0;
-            top:100%;
-
-
-        }
-        @media(min-width: 1350px){
-            min-width: 250px;
-        }
     }
-    
+
 
 
 }
@@ -152,10 +128,76 @@ $submenu-font-active: #57ACFA;
     }
 
 
+    .mobile-search{
+        .mobile-search-toggle{
+
+        }
+        form{
+            display: none;
+            top: 100%;
+            left: 0;
+            width: 100% !important;
+            padding: 10px;
+            z-index: 10;
+            transform: translateX(0) !important;
+            background: $lead-nav-font;
+
+        }
+    }
+
 
 }
 
+@media(min-width: 992px){
+    .lead-navigation{
 
+        .mobile-search{
+            display: none !important;
+        }
+        .navbar-nav{
+            width: 100%;
+            .nav-item:last-of-type{
+                .submenu{
+                    position: absolute;
+                    min-width: 150px;
+                    left: auto;
+                    right: 0;
+                    top:100%;
+                }
+            }
+        }
+        .submenu{
+            position: absolute;
+            min-width: 150px;
+            left: 0;
+            top:100%;
+
+        }
+        .nav-item{
+
+            &:hover{
+                .submenu{
+                    display: block;
+                }
+            }
+        }
+        .nav-link{
+            padding: 0.5rem 0;
+        }
+    }
+}
+
+
+@media(min-width: 1350px){
+    .navbar-nav{
+        font-size: 16px;
+
+    }
+    .submenu{
+        min-width: 250px;
+    }
+
+}
 
 
 

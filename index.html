@@ -52,19 +52,33 @@
                         </a> 
                     </h1>
 
+                    <div class="mobile-search ml-auto d-lg-none">
+                        <span class="fa fa-search mobile-search-toggle"></span>
+                        <form method="get" action="" class="search-site-form">
+                            <div class="input-group ">
+                                <div class="input-group-append w-100">
+                                    <input class="form-control" type="text">
+                                    <div class="input-group-text"><span class="fa fa-search"></span></div>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
                     <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                         <span></span>
                         <span></span>
                         <span></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="main-menu">
-                        <ul class="navbar-nav ml-md-auto ml-lg-3 ml-xl-0  text-center ">
+                    <div class="collapse navbar-collapse " id="main-menu">
+                        <ul class="navbar-nav ml-md-auto ml-lg-3 ml-xl-0  text-center justify-content-between">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#naslovna">Насловна <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#fondacija">Фондација 
+                                <a class="nav-link" href="#">Фондација 
                                     <img class="toggle-submenu" src="img/back-chevron .png" alt=""/>
                                 </a>
 
@@ -89,7 +103,7 @@
                             </li>
                             <li class="nav-item">
                                 <!--if element has submenu then write span-->
-                                <a class="nav-link" href="#vesti-tekstovi">Вести и текстови <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Вести и текстови <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Вести</a>
@@ -121,7 +135,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#pouke">Поуке <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Поуке <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Поука дана</a>
@@ -141,7 +155,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#sveto-pismo">Свето писмо <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Свето писмо <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Претрага библије</a>
@@ -176,7 +190,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#knjige">Књиге <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Књиге <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Књиге у ПДФ-у</a>
@@ -191,7 +205,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#molitva">Молитва <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Молитва <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Молитве видео/аудио</a>
@@ -207,7 +221,7 @@
 
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#galerija">Галерија <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
+                                <a class="nav-link" href="#">Галерија <img class="toggle-submenu" src="img/back-chevron .png" alt=""/></a>
                                 <ul class="list-unstyled submenu">
                                     <li>
                                         <a href="#">Иконе и фреске</a>
@@ -223,20 +237,21 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item search">
-                                <a class="nav-link " href="#"><span class="fa fa-search"></span></a>
-                                <form method="get" action="" class="search-site-form d-none">
-                                    <div class="input-group ">
-                                        <div class="input-group-append">
-                                            <input class="form-control" type="text">
-                                            <div class="input-group-text"><span class="fa fa-search"></span></div>
 
-                                        </div>
+                        </ul>
+                        <div class="nav-item search d-none d-lg-block">
+                            <span class="fa fa-search text-white"></span>
+                            <form method="get" action="" class="search-site-form d-none">
+                                <div class="input-group ">
+                                    <div class="input-group-append">
+                                        <input class="form-control" type="text">
+                                        <div class="input-group-text"><span class="fa fa-search"></span></div>
 
                                     </div>
-                                </form>
-                            </li>
-                        </ul>
+
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </nav>
 
@@ -455,49 +470,85 @@
                 <section class="look-reed-listen">
                     <div class="row">
                         <div class="col-12 col-lg-9">
-                        <div class="look-slider-wrapper bg-white">
-                            <div class="look-slider-header bg-primary py-1 mb-2">
-                                <h5 class="text-white px-3">Погледај</h5>
+
+                            <div class="look-slider-wrapper bg-white">
+
+                                <div class="look-slider-header bg-primary py-1 mb-2 position-relative">
+                                    <h5 class="text-white px-3">Погледај</h5>
+                                </div>
+
+                                <ul class="look-slider list-unstyled owl-carousel">
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/jeremy-perkins.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Два сокола</h4>
+                                                <h6 class="text-info"><a href="#">Чланци</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>  
+
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/jose-llamas.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Химна љубави</h4>
+                                                <h6 class="text-info"><a href="#">Здравље</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>
+
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/joshua-earle.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Ђердапски Острог</h4>
+                                                <h6 class="text-info"><a href="#">Чланци</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>
+
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/jeremy-perkins.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Ђердапски Острог</h4>
+                                                <h6 class="text-info"><a href="#">Чланци</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>
+
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/joshua-earle.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Ђердапски Острог</h4>
+                                                <h6 class="text-info"><a href="#">Чланци</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>
+
+                                    <li>
+                                        <figure class="bg-white p-2">
+                                            <img src="img/joshua-earle.png" alt=""/>
+                                            <div class="look-slider-caption">
+                                                <h4 class="text-secondary py-2">Ђердапски Острог</h4>
+                                                <h6 class="text-info"><a href="#">Чланци</a></h6>
+                                            </div>
+                                        </figure>
+
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="look-slider list-unstyled owl-carousel">
-                                <li>
-                                    <figure class="bg-white p-2">
-                                        <img src="img/jeremy-perkins.png" alt=""/>
-                                        <div class="look-slider-caption">
-                                            <h4 class="text-secondary">Два сокола</h4>
-                                            <h6 class="text-info"><a href="#">Чланци</a></h6>
-                                        </div>
-                                    </figure>
 
-                                </li>  
-
-                                <li>
-                                    <figure class="bg-white p-2">
-                                        <img src="img/jose-llamas.png" alt=""/>
-                                        <div class="look-slider-caption">
-                                            <h4 class="text-secondary">Химна љубави</h4>
-                                            <h6 class="text-info"><a href="#">Здравље</a></h6>
-                                        </div>
-                                    </figure>
-
-                                </li>
-
-                                <li>
-                                    <figure class="bg-white p-2">
-                                        <img src="img/joshua-earle.png" alt=""/>
-                                        <div class="look-slider-caption">
-                                            <h4 class="text-secondary">Ђердапски Острог</h4>
-                                            <h6 class="text-info"><a href="#">Чланци</a></h6>
-                                        </div>
-                                    </figure>
-
-                                </li>
-                            </ul>
                         </div>
+                    </div>
 
-                    </div>
-                    </div>
-                    
 
                 </section>
                 <!--********* LOOK REED LISTEN ENDS ***********-->

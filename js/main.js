@@ -26,7 +26,9 @@ $(document).ready(function () {
 
     //***********LEAD NAVIGATION **************
 
-    $('.submenu a').click(function () {
+
+
+    $('.navbar-toggler').click(function () {
         $(this).toggleClass('active');
     });
 
@@ -34,13 +36,31 @@ $(document).ready(function () {
 
     //SHOW/HIDE SUBMENU
 
-    if ($(window).width() < 992) {
-        $('.nav-link').click(function (e) {
+
+
+
+    var ekran = $(window).width();
+    if (ekran < 992) {
+        $('.navbar-nav').on('click', '.nav-link', function (e) {
             e.preventDefault();
-            e.stopPropagation();
+
             $(this).next('.submenu').slideToggle();
+
         });
     }
+
+    $(window).resize(function () {
+
+        ekran = $(window).width();
+       if (ekran < 992) {
+        $('.navbar-nav').on('click', '.nav-link', function (e) {
+            e.preventDefault();
+
+            $(this).next('.submenu').slideToggle();
+
+        });
+    }
+    });
 
 
 
@@ -50,6 +70,12 @@ $(document).ready(function () {
         e.preventDefault();
         e.stopPropagation();
         $(this).find('.search-site-form').toggleClass('d-none d-block');
+    });
+
+    $('.mobile-search-toggle').click(function () {
+
+        $(this).next('.search-site-form').toggle();
+
     });
 
     //OWL CAROUSEL
@@ -83,14 +109,17 @@ $(document).ready(function () {
                 margin: 0,
                 responsiveClass: true,
                 dots: false,
-                autoplay: false,
+                autoplay: true,
                 nav: true,
                 navText: ['<img src="img/back-chevron-left.png">', '<img src="img/back-chevron-right.png">'],
-                items: 3,
+                items: 2,
                 autoplayHoverPause: true,
                 responsive: {
 
-                    0: {
+                    768: {
+                        items: 2
+                    }, 
+                    992:{
                         items: 3
                     }
                 }
