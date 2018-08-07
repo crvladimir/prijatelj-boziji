@@ -109,7 +109,7 @@ $(document).ready(function () {
                 margin: 0,
                 responsiveClass: true,
                 dots: false,
-                autoplay: true,
+                autoplay: false,
                 nav: true,
                 navText: ['<img src="img/back-chevron-left.png">', '<img src="img/back-chevron-right.png">'],
                 items: 2,

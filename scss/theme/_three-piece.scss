@@ -4,7 +4,7 @@ $h4-color: #454F5A;
 .three-piece{
     font-size: 14px;
     article{
-        height: 171px;
+        height: 170px;
         padding: 15px;
         figure {
             margin: 0 0 0;
@@ -15,17 +15,41 @@ $h4-color: #454F5A;
     }
     h4{
         color: $h4-color;
-        font-size: 20px;
+        font-size: 16px;
     }
     h5{
-        font-size: 16px;
+        font-size: 14px;
     }
     p{
         margin-bottom: 0.5rem;
     }
-    @media(min-width: 1350px){
-         h4{
-        
+    
+    
+    @media(min-width: 576px){
+    h4{
+
+        font-size: 18px !important;
+    }
+    h5{
+        font-size: 16px !important;
+    }
+    
+}
+
+@media(min-width: 768px){
+    h4{
+
+        font-size: 20px !important;
+    }
+    h5{
+        font-size: 18px !important;
+    }
+    
+}
+
+@media(min-width: 1350px){
+    h4{
+
         font-size: 24px;
     }
     h5{
@@ -34,6 +58,6 @@ $h4-color: #454F5A;
     p{
         margin-bottom: 1rem;
     }
-    }
+}
 }
 

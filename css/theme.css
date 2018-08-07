@@ -519,15 +519,13 @@ header {
   background: #fff;
   display: none;
   z-index: 7;
+  text-align: left;
 }
 .navbar-dark .submenu li a {
   display: block;
   padding: 5px;
   color: #454F5A;
   position: relative;
-}
-.navbar-dark .submenu li a.active {
-  color: #57ACFA !important;
 }
 .navbar-dark .submenu li a:hover {
   text-decoration: none;
@@ -539,15 +537,9 @@ header {
 .lead-navigation .form-control {
   display: block;
   width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
   color: #0079BE;
   background-color: #fff;
-  background-clip: padding-box;
   border: 1px solid #fff;
-  transition: border-color 0.15s ease-in-out, 0.15s ease-in-out;
 }
 .lead-navigation .search-site-form {
   position: absolute;
@@ -558,24 +550,20 @@ header {
 }
 .lead-navigation .input-group-text {
   display: flex;
-  align-items: center;
-  padding: 0.375rem 0.75rem;
-  margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
   color: #fff;
-  text-align: center;
-  white-space: nowrap;
   background-color: #0079BE;
   border-color: transparent;
+}
+.lead-navigation .mobile-search {
+  margin-right: 10px;
+  line-height: 1;
+  font-size: 2rem;
 }
 .lead-navigation .mobile-search form {
   display: none;
   top: 100%;
   left: 0;
   width: 100% !important;
-  padding: 10px;
   z-index: 10;
   transform: translateX(0) !important;
   background: #fff;
@@ -609,11 +597,10 @@ header {
   }
 }
 @media (min-width: 1350px) {
-  .navbar-nav {
+  .lead-navigation .navbar-nav {
     font-size: 16px;
   }
-
-  .submenu {
+  .lead-navigation .submenu {
     min-width: 250px;
   }
 }
@@ -695,7 +682,7 @@ header {
   font-size: 14px;
 }
 .three-piece article {
-  height: 171px;
+  height: 170px;
   padding: 15px;
 }
 .three-piece article figure {
@@ -706,13 +693,29 @@ header {
 }
 .three-piece h4 {
   color: #454F5A;
-  font-size: 20px;
+  font-size: 16px;
 }
 .three-piece h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 .three-piece p {
   margin-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  .three-piece h4 {
+    font-size: 18px !important;
+  }
+  .three-piece h5 {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 768px) {
+  .three-piece h4 {
+    font-size: 20px !important;
+  }
+  .three-piece h5 {
+    font-size: 18px !important;
+  }
 }
 @media (min-width: 1350px) {
   .three-piece h4 {
@@ -727,19 +730,66 @@ header {
 }
 
 .look-reed-listen figure {
-  height: 288px;
+  height: 225px;
+  margin-bottom: 0 !important;
+}
+.look-reed-listen figure img {
+  position: relative !important;
+}
+.look-reed-listen figure .image-after:after {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  right: 0;
+  background-image: url("assets/play-button.png");
+  background-size: 100% 100%;
+  z-index: 6;
+}
+.look-reed-listen .look-slider {
+  margin-bottom: 0;
 }
 
 .look-slider-wrapper .owl-carousel .owl-nav {
   position: absolute;
-  top: -53px;
+  top: -54px;
   right: 10px;
 }
 .look-slider-wrapper h4 {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5rem;
   overflow: hidden;
-  height: 3.5rem;
+  height: 2.7rem;
+  margin-bottom: 0;
+}
+.look-slider-wrapper .look-slider-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 576px) {
+  .look-reed-listen h4 {
+    font-size: 16px !important;
+    height: 2rem;
+  }
+  .look-reed-listen figure {
+    height: 265px !important;
+  }
+}
+@media (min-width: 768px) {
+  .look-reed-listen h4 {
+    font-size: 20px !important;
+  }
+  .look-reed-listen figure {
+    height: 285px !important;
+  }
+}
+@media (min-width: 992px) {
+  .look-reed-listen h4 {
+    font-size: 24px !important;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */
