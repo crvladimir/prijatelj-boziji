@@ -1,0 +1,25 @@
+
+
+.spiritual{
+    h2{
+        font-size: 24px;
+        line-height: 100%;
+    }
+    
+}
+
+@media(min-width: 992px){
+    .spiritual{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
+
+@media(min-width: 1350px){
+    .spiritual{
+        h2{
+            font-size: 36px;
+        }
+    }
+}

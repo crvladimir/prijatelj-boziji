@@ -23,48 +23,56 @@ $aside-projects-title: #454F5A;
             z-index: 6;
         }
 
-    }
-    aside{
-        font-size: 14px;
-    }
-    .aside-news-tab{
-        a.nav-link{
-            background: $white;
-            color: $aside-news-tab;
-            border-color: transparent;
-            &.active{
-                color: $indigo;
+    }    
+    .look-slider-wrapper,
+    .read-slider-wrapper,
+    .listen-slider-wrapper{
+        .owl-carousel{
+            .owl-nav{
+                position: absolute;
+                top: -54px;
+                right: 10px;
             }
         }
+        h4{
+            font-size: 14px;
+            line-height: 1.5rem;
+            overflow: hidden;
+            height: 2.7rem;
+            margin-bottom: 0;
+        }
+
     }
     .look-slider{
         margin-bottom: 0;
     }
-    .aside-projects-wrapper{
-        h5{
-            color: $aside-projects-title;
-        }
-    }
-}
-.look-slider-wrapper,
-.read-slider-wrapper,
-.listen-slider-wrapper{
-    .owl-carousel{
-        .owl-nav{
-            position: absolute;
-            top: -54px;
-            right: 10px;
-        }
-    }
-    h4{
+
+    aside{
         font-size: 14px;
-        line-height: 1.5rem;
-        overflow: hidden;
-        height: 2.7rem;
-        margin-bottom: 0;
+        .aside-news-tab{
+            border-bottom: none;
+            a.nav-link{
+                background: $white;
+                color: $aside-news-tab;
+                border-color: transparent;
+                &.active{
+                    color: $indigo;
+                }
+            }
+        }
+        .aside-projects-wrapper{
+            h5{
+                color: $aside-projects-title;
+            }
+        }
+        .media{
+            border-bottom: 1px solid $gray-100;
+        }
+
     }
 
 }
+
 
 @media(min-width: 576px){
     .look-read-listen{
@@ -72,10 +80,7 @@ $aside-projects-title: #454F5A;
             font-size: 16px !important;
             height: 2rem;
         }
-        figure{
-            //height: 265px !important;
 
-        }  
     }
 
 }
@@ -84,10 +89,7 @@ $aside-projects-title: #454F5A;
     .look-read-listen{
         h4{
             font-size: 18px !important;
-        }
-        figure{
-            //height: 285px !important;
-        }  
+        }         
     }
 }
 
@@ -99,7 +101,7 @@ $aside-projects-title: #454F5A;
         .aside-news-tab{
             a.nav-link{
                 font-size: 12px;
-                padding: 1rem 0.8rem;
+                padding: 1rem 0.7rem;
 
             }
         }
@@ -113,7 +115,7 @@ $aside-projects-title: #454F5A;
         h4{
             font-size: 24px !important;
         }
-        
+
     }
 
 

@@ -682,7 +682,7 @@ header {
   font-size: 14px;
 }
 .three-piece article {
-  min-height: 170px;
+  height: 170px;
   padding: 15px;
 }
 .three-piece article figure {
@@ -749,39 +749,44 @@ header {
   background-size: 100% 100%;
   z-index: 6;
 }
-.look-read-listen aside {
-  font-size: 14px;
-}
-.look-read-listen .aside-news-tab a.nav-link {
-  background: #fff;
-  color: #454F5A;
-  border-color: transparent;
-}
-.look-read-listen .aside-news-tab a.nav-link.active {
-  color: #4A90E2;
-}
-.look-read-listen .look-slider {
-  margin-bottom: 0;
-}
-.look-read-listen .aside-projects-wrapper h5 {
-  color: #454F5A;
-}
-
-.look-slider-wrapper .owl-carousel .owl-nav,
-.read-slider-wrapper .owl-carousel .owl-nav,
-.listen-slider-wrapper .owl-carousel .owl-nav {
+.look-read-listen .look-slider-wrapper .owl-carousel .owl-nav,
+.look-read-listen .read-slider-wrapper .owl-carousel .owl-nav,
+.look-read-listen .listen-slider-wrapper .owl-carousel .owl-nav {
   position: absolute;
   top: -54px;
   right: 10px;
 }
-.look-slider-wrapper h4,
-.read-slider-wrapper h4,
-.listen-slider-wrapper h4 {
+.look-read-listen .look-slider-wrapper h4,
+.look-read-listen .read-slider-wrapper h4,
+.look-read-listen .listen-slider-wrapper h4 {
   font-size: 14px;
   line-height: 1.5rem;
   overflow: hidden;
   height: 2.7rem;
   margin-bottom: 0;
+}
+.look-read-listen .look-slider {
+  margin-bottom: 0;
+}
+.look-read-listen aside {
+  font-size: 14px;
+}
+.look-read-listen aside .aside-news-tab {
+  border-bottom: none;
+}
+.look-read-listen aside .aside-news-tab a.nav-link {
+  background: #fff;
+  color: #454F5A;
+  border-color: transparent;
+}
+.look-read-listen aside .aside-news-tab a.nav-link.active {
+  color: #4A90E2;
+}
+.look-read-listen aside .aside-projects-wrapper h5 {
+  color: #454F5A;
+}
+.look-read-listen aside .media {
+  border-bottom: 1px solid #f8f9fa;
 }
 
 @media (min-width: 576px) {
@@ -801,12 +806,27 @@ header {
   }
   .look-read-listen .aside-news-tab a.nav-link {
     font-size: 12px;
-    padding: 1rem 0.8rem;
+    padding: 1rem 0.7rem;
   }
 }
 @media (min-width: 1350px) {
   .look-read-listen h4 {
     font-size: 24px !important;
+  }
+}
+.spiritual h2 {
+  font-size: 24px;
+  line-height: 100%;
+}
+
+@media (min-width: 992px) {
+  .spiritual h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1350px) {
+  .spiritual h2 {
+    font-size: 36px;
   }
 }
 
