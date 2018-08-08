@@ -103,8 +103,8 @@ $(document).ready(function () {
 
 
         //LOOK SLIDER
-        if ($('.look-slider').length > 0) {
-            $('.look-slider').owlCarousel({
+        if ($('.look-read-listen-slider').length > 0) {
+            $('.look-read-listen-slider').owlCarousel({
                 loop: true,
                 margin: 0,
                 responsiveClass: true,

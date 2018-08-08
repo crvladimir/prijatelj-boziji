@@ -682,7 +682,7 @@ header {
   font-size: 14px;
 }
 .three-piece article {
-  height: 170px;
+  min-height: 170px;
   padding: 15px;
 }
 .three-piece article figure {
@@ -729,14 +729,16 @@ header {
   }
 }
 
-.look-reed-listen figure {
-  height: 225px;
+.look-read-listen h5 {
+  font-size: 16px;
+}
+.look-read-listen figure {
   margin-bottom: 0 !important;
 }
-.look-reed-listen figure img {
+.look-read-listen figure img {
   position: relative !important;
 }
-.look-reed-listen figure .image-after:after {
+.look-read-listen figure .image-after:after {
   content: '';
   position: absolute;
   height: 60px;
@@ -747,47 +749,63 @@ header {
   background-size: 100% 100%;
   z-index: 6;
 }
-.look-reed-listen .look-slider {
+.look-read-listen aside {
+  font-size: 14px;
+}
+.look-read-listen .aside-news-tab a.nav-link {
+  background: #fff;
+  color: #454F5A;
+  border-color: transparent;
+}
+.look-read-listen .aside-news-tab a.nav-link.active {
+  color: #4A90E2;
+}
+.look-read-listen .look-slider {
   margin-bottom: 0;
 }
+.look-read-listen .aside-projects-wrapper h5 {
+  color: #454F5A;
+}
 
-.look-slider-wrapper .owl-carousel .owl-nav {
+.look-slider-wrapper .owl-carousel .owl-nav,
+.read-slider-wrapper .owl-carousel .owl-nav,
+.listen-slider-wrapper .owl-carousel .owl-nav {
   position: absolute;
   top: -54px;
   right: 10px;
 }
-.look-slider-wrapper h4 {
+.look-slider-wrapper h4,
+.read-slider-wrapper h4,
+.listen-slider-wrapper h4 {
   font-size: 14px;
   line-height: 1.5rem;
   overflow: hidden;
   height: 2.7rem;
   margin-bottom: 0;
 }
-.look-slider-wrapper .look-slider-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 
 @media (min-width: 576px) {
-  .look-reed-listen h4 {
+  .look-read-listen h4 {
     font-size: 16px !important;
     height: 2rem;
   }
-  .look-reed-listen figure {
-    height: 265px !important;
-  }
 }
 @media (min-width: 768px) {
-  .look-reed-listen h4 {
-    font-size: 20px !important;
-  }
-  .look-reed-listen figure {
-    height: 285px !important;
+  .look-read-listen h4 {
+    font-size: 18px !important;
   }
 }
 @media (min-width: 992px) {
-  .look-reed-listen h4 {
+  .look-read-listen h5 {
+    font-size: 16px !important;
+  }
+  .look-read-listen .aside-news-tab a.nav-link {
+    font-size: 12px;
+    padding: 1rem 0.8rem;
+  }
+}
+@media (min-width: 1350px) {
+  .look-read-listen h4 {
     font-size: 24px !important;
   }
 }
