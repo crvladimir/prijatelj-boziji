@@ -608,10 +608,10 @@ header {
   margin-bottom: 16px;
 }
 .lead-slider-wrapper .home {
+  height: 380px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: 380px;
 }
 .lead-slider-wrapper .lead-slider .owl-dots {
   position: absolute;
@@ -654,20 +654,15 @@ header {
 }
 
 .lead-aside {
-  height: 380px;
   color: #fff;
-}
-.lead-aside .aside-description {
-  bottom: 0;
-  right: 0;
-  padding: 5px 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  min-height: 250px;
 }
 .lead-aside .aside-description p {
   margin-bottom: 0;
-}
-.lead-aside img {
-  height: 100%;
-  display: block;
 }
 
 @media (min-width: 992px) {
@@ -682,7 +677,6 @@ header {
   font-size: 14px;
 }
 .three-piece article {
-  height: 170px;
   padding: 15px;
 }
 .three-piece article figure {
@@ -738,15 +732,14 @@ header {
 .look-read-listen figure img {
   position: relative !important;
 }
-.look-read-listen figure .image-after:after {
+.look-read-listen .video-item figure:after {
   content: '';
   position: absolute;
-  height: 60px;
-  width: 60px;
+  height: 100%;
+  width: 100%;
   top: 0;
   right: 0;
-  background-image: url("assets/play-button.png");
-  background-size: 100% 100%;
+  background: url("assets/play-button.png") no-repeat center;
   z-index: 6;
 }
 .look-read-listen .look-slider-wrapper .owl-carousel .owl-nav,
@@ -768,24 +761,25 @@ header {
 .look-read-listen .look-slider {
   margin-bottom: 0;
 }
-.look-read-listen aside {
+
+aside.aside-content {
   font-size: 14px;
 }
-.look-read-listen aside .aside-news-tab {
+aside.aside-content .aside-news-tab {
   border-bottom: none;
 }
-.look-read-listen aside .aside-news-tab a.nav-link {
+aside.aside-content .aside-news-tab a.nav-link {
   background: #fff;
   color: #454F5A;
   border-color: transparent;
 }
-.look-read-listen aside .aside-news-tab a.nav-link.active {
+aside.aside-content .aside-news-tab a.nav-link.active {
   color: #4A90E2;
 }
-.look-read-listen aside .aside-projects-wrapper h5 {
+aside.aside-content .aside-projects-wrapper h5 {
   color: #454F5A;
 }
-.look-read-listen aside .media {
+aside.aside-content .media {
   border-bottom: 1px solid #f8f9fa;
 }
 
@@ -804,7 +798,8 @@ header {
   .look-read-listen h5 {
     font-size: 16px !important;
   }
-  .look-read-listen .aside-news-tab a.nav-link {
+
+  .aside-content .aside-news-tab a.nav-link {
     font-size: 12px;
     padding: 1rem 0.7rem;
   }
@@ -818,6 +813,22 @@ header {
   font-size: 24px;
   line-height: 100%;
 }
+.spiritual .spiritual-description {
+  left: 25px;
+  bottom: 15px;
+}
+
+aside .spiritual-description {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+aside h2 {
+  font-family: 'Times-Bold';
+  font-weight: bold;
+}
 
 @media (min-width: 992px) {
   .spiritual h2 {
@@ -828,6 +839,12 @@ header {
   .spiritual h2 {
     font-size: 36px;
   }
+}
+.youtube-header {
+  background: #E1E8F0 !important;
+}
+.youtube-header h5 {
+  color: #454F5A;
 }
 
 /*# sourceMappingURL=theme.css.map */

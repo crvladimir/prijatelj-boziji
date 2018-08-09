@@ -6,11 +6,11 @@ $lead-slider-text-color: $white;
     margin-bottom: 16px;
 
     .home{
-
+        height: 380px;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        height: 380px;
+
     }
     .lead-slider{ 
         .owl-dots{
@@ -69,21 +69,24 @@ $lead-slider-text-color: $white;
 
 
 .lead-aside{
-    height: 380px;
+
     color: $white;
+    
+   
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background-position: center;
+        min-height: 250px;
+    
     .aside-description{
-        bottom: 0;
-        right: 0;
-        padding: 5px 10px;
+        
 
         p{
             margin-bottom: 0;
         }
     }
-    img{
-        height: 100%;
-        display: block;
-    }
+    
 }
 
 @media(min-width: 992px){

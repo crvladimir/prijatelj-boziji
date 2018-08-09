@@ -52,14 +52,14 @@ $(document).ready(function () {
     $(window).resize(function () {
 
         ekran = $(window).width();
-       if (ekran < 992) {
-        $('.navbar-nav').on('click', '.nav-link', function (e) {
-            e.preventDefault();
+        if (ekran < 992) {
+            $('.navbar-nav').on('click', '.nav-link', function (e) {
+                e.preventDefault();
 
-            $(this).next('.submenu').slideToggle();
+                $(this).next('.submenu').slideToggle();
 
-        });
-    }
+            });
+        }
     });
 
 
@@ -112,14 +112,16 @@ $(document).ready(function () {
                 autoplay: false,
                 nav: true,
                 navText: ['<img src="img/back-chevron-left.png">', '<img src="img/back-chevron-right.png">'],
-                items: 2,
                 autoplayHoverPause: true,
                 responsive: {
-
-                    768: {
+                    0: {
+                        items: 1
+                    },
+                    450: {
                         items: 2
-                    }, 
-                    992:{
+                    },
+
+                    1100: {
                         items: 3
                     }
                 }

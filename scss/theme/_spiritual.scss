@@ -5,7 +5,25 @@
         font-size: 24px;
         line-height: 100%;
     }
+    .spiritual-description{
+        left: 25px;
+        bottom: 15px;
+    }
     
+}
+aside{
+    .spiritual-description{
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        text-align: center;
+        
+    }
+    h2{
+        font-family: 'Times-Bold';
+        font-weight: bold;
+    }
 }
 
 @media(min-width: 992px){

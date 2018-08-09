@@ -1,0 +1,9 @@
+$youtube-background: #E1E8F0;
+$youtube-title-color: #454F5A;
+
+.youtube-header{
+    background: $youtube-background !important;
+    h5{
+        color: $youtube-title-color;
+    }
+}
