@@ -1,9 +1,67 @@
 $youtube-background: #E1E8F0;
 $youtube-title-color: #454F5A;
 
-.youtube-header{
-    background: $youtube-background !important;
-    h5{
-        color: $youtube-title-color;
+.youtube{
+    h2{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px; 
+    }
+    .youtube-main-img{
+
+        img{
+            width: 100%;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/play-button.png') no-repeat center;
+            
+        }
+    }
+}
+
+@media(min-width: 576px){
+    .youtube{
+        h2{
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media(min-width: 768px){
+    .youtube{
+        h2{
+            font-size: 24px;
+        }
+        h4{
+            font-size: 18px; 
+        }
+    }
+}
+
+@media(min-width: 992px){
+    .youtube{
+        h2{
+            font-size: 28px;
+        }
+        h4{
+            font-size: 24px; 
+        }
+    }
+}
+
+@media(min-width: 1350px){
+    .youtube{
+        h2{
+            font-size: 36px;
+        }
     }
 }
