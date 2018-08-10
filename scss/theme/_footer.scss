@@ -1,0 +1,48 @@
+
+footer{
+    .social{
+        a{
+            margin-left: 0;
+            padding: 0 10px;
+            position: relative;
+            transition: 0.4s linear;
+        }
+    }
+    .films-column{
+        line-height: 1;
+        .films-comment{
+            font-size: 11px;                       
+        }
+    }
+    
+    .films-title{
+        font-size: 14px;
+    }
+
+}
+@media(min-width: 576px){
+    footer{
+
+    }
+}
+
+@media(min-width: 768px){
+    footer{
+
+    }
+}
+
+@media(min-width: 992px){
+    footer{
+
+    }
+}
+
+@media(min-width: 1350px){
+    footer{
+        .films-title{
+            font-size: 15px;
+        }
+    }
+}
+
