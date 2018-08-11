@@ -1,25 +1,41 @@
 
-footer{
-    .social{
-        a{
-            margin-left: 0;
-            padding: 0 10px;
-            position: relative;
-            transition: 0.4s linear;
-        }
-    }
+footer{    
+
     .films-column{
         line-height: 1;
         .films-comment{
             font-size: 11px;                       
         }
     }
-    
+
     .films-title{
         font-size: 14px;
     }
+    .more-column{
 
+        li{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+    }
+    .small-social{       
+            a{
+                span{
+                    opacity:0.6;
+                }            
+            }        
+
+    }
+
+    .copyright{
+        opacity:0.6;
+        border-top: 0.5px solid $gray-100;
+    }
 }
+
+
+
 @media(min-width: 576px){
     footer{
 
@@ -28,7 +44,12 @@ footer{
 
 @media(min-width: 768px){
     footer{
+        .more-column{
+            li{
+                text-align: left;
+            }
 
+        }
     }
 }
 

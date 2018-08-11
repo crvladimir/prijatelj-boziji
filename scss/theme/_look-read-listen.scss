@@ -5,14 +5,12 @@ $aside-projects-title: #454F5A;
     h5{
         font-size: 16px;
     }
-    figure{
-        //height: 225px;
+    figure{        
         margin-bottom: 0 !important;
         img{
             position: relative !important;
         }
         
-
     }  
     
     .video-item{
@@ -51,8 +49,6 @@ $aside-projects-title: #454F5A;
         margin-bottom: 0;
     }
 
-
-
 }
 
     aside.aside-content{
@@ -75,6 +71,10 @@ $aside-projects-title: #454F5A;
         }
         .media{
             border-bottom: 1px solid $gray-100;
+            .w-25{              
+                    margin-bottom: 0;
+                
+            }
         }
 
     }

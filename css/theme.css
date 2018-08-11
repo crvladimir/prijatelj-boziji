@@ -782,6 +782,9 @@ aside.aside-content .aside-projects-wrapper h5 {
 aside.aside-content .media {
   border-bottom: 1px solid #f8f9fa;
 }
+aside.aside-content .media .w-25 {
+  margin-bottom: 0;
+}
 
 @media (min-width: 576px) {
   .look-read-listen h4 {
@@ -886,12 +889,6 @@ aside h2 {
     font-size: 36px;
   }
 }
-footer .social a {
-  margin-left: 0;
-  padding: 0 10px;
-  position: relative;
-  transition: 0.4s linear;
-}
 footer .films-column {
   line-height: 1;
 }
@@ -901,7 +898,23 @@ footer .films-column .films-comment {
 footer .films-title {
   font-size: 14px;
 }
+footer .more-column li {
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer .small-social a span {
+  opacity: 0.6;
+}
+footer .copyright {
+  opacity: 0.6;
+  border-top: 0.5px solid #f8f9fa;
+}
 
+@media (min-width: 768px) {
+  footer .more-column li {
+    text-align: left;
+  }
+}
 @media (min-width: 1350px) {
   footer .films-title {
     font-size: 15px;
