@@ -519,7 +519,7 @@ header {
   background: #fff;
   display: none;
   z-index: 7;
-  text-align: left;
+  text-align: center;
 }
 .navbar-dark .submenu li a {
   display: block;
@@ -529,6 +529,9 @@ header {
 }
 .navbar-dark .submenu li a:hover {
   text-decoration: none;
+}
+.navbar-dark .submenu li:first-of-type a {
+  color: #4A90E2;
 }
 
 .lead-navigation {
@@ -578,16 +581,17 @@ header {
   }
   .lead-navigation .navbar-nav .nav-item:last-of-type .submenu {
     position: absolute;
-    min-width: 150px;
+    min-width: 250px;
     left: auto;
     right: 0;
     top: 100%;
   }
   .lead-navigation .submenu {
     position: absolute;
-    min-width: 150px;
+    min-width: 250px;
     left: 0;
     top: 100%;
+    text-align: left;
   }
   .lead-navigation .nav-item:hover .submenu {
     display: block;
@@ -599,9 +603,6 @@ header {
 @media (min-width: 1350px) {
   .lead-navigation .navbar-nav {
     font-size: 16px;
-  }
-  .lead-navigation .submenu {
-    min-width: 250px;
   }
 }
 .lead-slider-wrapper {
@@ -882,6 +883,9 @@ aside h2 {
   }
   .youtube h4 {
     font-size: 20px;
+  }
+  .youtube .fb-page {
+    max-width: 100%;
   }
 }
 @media (min-width: 1350px) {

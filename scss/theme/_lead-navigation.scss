@@ -15,9 +15,7 @@ $submenu-font-active: #57ACFA;
             color: $lead-nav-font;
             transition: 0.3s ease;
             position: relative;
-
         }
-
 
     }
     //****NAVBAR TOGGLER****
@@ -64,7 +62,7 @@ $submenu-font-active: #57ACFA;
         background: $lead-nav-font;
         display: none;
         z-index: 7;
-        text-align: left;
+        text-align: center;
         li{
             a{
                 display: block;
@@ -74,6 +72,11 @@ $submenu-font-active: #57ACFA;
 
                 &:hover{
                     text-decoration: none;
+                }
+            }
+            &:first-of-type{
+                a{
+                    color: $indigo;
                 }
             }
         }
@@ -140,7 +143,7 @@ $submenu-font-active: #57ACFA;
             .nav-item:last-of-type{
                 .submenu{
                     position: absolute;
-                    min-width: 150px;
+                    min-width: 250px;
                     left: auto;
                     right: 0;
                     top:100%;
@@ -149,13 +152,12 @@ $submenu-font-active: #57ACFA;
         }
         .submenu{
             position: absolute;
-            min-width: 150px;
+            min-width: 250px;
             left: 0;
             top:100%;
-
+            text-align: left;
         }
         .nav-item{
-
             &:hover{
                 .submenu{
                     display: block;
@@ -174,9 +176,7 @@ $submenu-font-active: #57ACFA;
         .navbar-nav{
             font-size: 16px;
         }
-        .submenu{
-            min-width: 250px;
-        }
+        
     }
 
 
