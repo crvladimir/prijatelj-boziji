@@ -1,0 +1,55 @@
+$news-span-bg: #9B9B9B;
+
+.news{
+    h2,h4{
+        font-family: 'Times';
+        font-weight: normal;
+    }
+    p{
+        font-size: 12px;
+    }
+    .news-list-social{
+        span{
+            background: $news-span-bg;
+            border: 1px solid $news-span-bg;
+            border-radius: 3px;
+            padding: 3px;
+            margin-right: 2px;
+        }
+    }
+    .news-article{
+        .media{
+            h4,p,ul{
+               margin-bottom: 0 !important; 
+            }            
+        }
+    }
+}
+
+@media(min-width: 576px){
+    .news{
+        
+    }
+}
+
+@media(min-width: 768px){
+    .news{
+        
+    }
+}
+
+@media(min-width: 992px){
+    .news{
+        p{
+        font-size: 13px;
+    }
+    }
+}
+
+@media(min-width: 1350px){
+    .news{
+        p{
+            font-size: 15px;
+        }
+    }
+}
