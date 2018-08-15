@@ -938,8 +938,13 @@ footer .copyright {
   padding: 3px;
   margin-right: 2px;
 }
-.news .news-article .media h4, .news .news-article .media p, .news .news-article .media ul {
-  margin-bottom: 0 !important;
+.news .news-article .news-wrapper .news-img-wrapper {
+  min-width: 25%;
+  height: 195px;
+}
+.news .news-article .news-wrapper .news-img-wrapper img {
+  width: 100%;
+  display: block;
 }
 
 @media (min-width: 992px) {

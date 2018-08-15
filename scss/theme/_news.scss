@@ -18,9 +18,17 @@ $news-span-bg: #9B9B9B;
         }
     }
     .news-article{
-        .media{
+        .news-wrapper{
             h4,p,ul{
-               margin-bottom: 0 !important; 
+               //margin-bottom: 0 !important; 
+            }
+            .news-img-wrapper{
+                min-width: 25%;
+                height: 195px;
+                img{
+                    width: 100%;
+                    display: block;
+                }
             }            
         }
     }
