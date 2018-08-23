@@ -12,19 +12,28 @@ $news-span-bg: #9B9B9B;
         font-size: 18px;
     }
     .news-list-social{
-        span{
+        span{            
             background: $news-span-bg;
             border: 1px solid $news-span-bg;
             border-radius: 3px;
             padding: 3px;
             margin-right: 2px;
+            width: 25px;
         }
+        .news-list-item {
+            .fa-facebook:hover{
+                background-color: #3b5998;
+                transition: 0.5s ease;
+            }
+        }
+
+
     }
     .news-article{
         .news-wrapper{
             border-bottom: 1px solid $gray-600;
             .news-img-wrapper{
-                min-width: 40%;
+                width: 100%;
                 min-height: 100px;
                 img{                
                     display: block;
@@ -32,7 +41,7 @@ $news-span-bg: #9B9B9B;
                 }
             } 
             .news-body{
-               //min-width: 60%;                
+                width: 100%;                
             }           
         }
     }
@@ -43,13 +52,29 @@ $news-span-bg: #9B9B9B;
         h4{
             font-size: 20px;
         }
+        .news-img-wrapper{
+            width: 40%;
+        }
+        .news-body{
+            width: 60%;                
+        }
+        .news-date{
+            margin-bottom: 5px;
+        }
+        .news-text{
+            max-height: 90px;
+            overflow-y: hidden;
+        }
 
     }
 }
 
 @media(min-width: 768px){
     .news{
-
+        .news-text{
+            max-height: 125px;
+            overflow-y: hidden;
+        }
     }
 }
 
@@ -74,10 +99,10 @@ $news-span-bg: #9B9B9B;
             font-size: 24px;
         }
         .news-img-wrapper{
-            min-width: 25% !important;            
+            width: 35% !important;            
         }
         .news-body{
-            min-width: 75% !important;
+            width: 65% !important;
 
         }
 
