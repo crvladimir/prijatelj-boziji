@@ -946,6 +946,18 @@ footer .copyright {
   background-color: #3b5998;
   transition: 0.5s ease;
 }
+.news .news-list-social .news-list-item .fa-twitter:hover {
+  background-color: #1da1f2;
+  transition: 0.5s ease;
+}
+.news .news-list-social .news-list-item .fa-pinterest-p:hover {
+  background-color: #cb2027;
+  transition: 0.5s ease;
+}
+.news .news-list-social .news-list-item .fa-google-plus:hover {
+  background-color: #dc4e41;
+  transition: 0.5s ease;
+}
 .news .news-article .news-wrapper {
   border-bottom: 1px solid #75859B;
 }
