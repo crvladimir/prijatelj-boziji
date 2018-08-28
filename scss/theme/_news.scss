@@ -42,12 +42,13 @@ $news-span-bg: #9B9B9B;
 
     }
     .news-article{ 
-        &:hover{
-            box-shadow: 0 0 25px rgba(0,0,0,0.2);
-            transition: 0.4s linear;
-        }
+
         .news-wrapper{
             border-bottom: 1px solid $gray-600;
+            &:hover{
+                box-shadow: 0 0 25px rgba(0,0,0,0.2);
+                transition: 0.4s linear;
+            } 
             .news-img-wrapper{
                 width: 100%;
                 min-height: 100px;
@@ -59,7 +60,7 @@ $news-span-bg: #9B9B9B;
             .news-body{
                 width: 100%;
                 .news-text{
-                    max-height: 69px;
+                    max-height: 66px;
                     overflow-y: hidden;
                 }                
             }           
@@ -82,7 +83,7 @@ $news-span-bg: #9B9B9B;
             margin-bottom: 5px;
         }
         .news-text{
-            max-height: 90px !important;
+            max-height: 88px !important;
             overflow-y: hidden !important;
         }
 
@@ -91,6 +92,9 @@ $news-span-bg: #9B9B9B;
 
 @media(min-width: 768px){
     .news{
+        .news-body{
+            padding-left: 7px;
+        }
         .news-text{
             max-height: 125px !important;
             overflow-y: hidden !important;
