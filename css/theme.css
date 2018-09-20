@@ -1032,5 +1032,8 @@ footer .copyright {
     width: 65% !important;
   }
 }
+.aside-news-messages {
+  min-height: 380px;
+}
 
 /*# sourceMappingURL=theme.css.map */
