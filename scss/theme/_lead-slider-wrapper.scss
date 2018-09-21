@@ -71,22 +71,20 @@ $lead-slider-text-color: $white;
 .lead-aside{
 
     color: $white;
-    
-   
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        background-position: center;
-        min-height: 250px;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    min-height: 250px;
+
     .aside-description{
-        
+
 
         p{
             margin-bottom: 0;
         }
     }
-    
+
 }
 
 @media(min-width: 992px){

@@ -1034,6 +1034,11 @@ footer .copyright {
 }
 .aside-news-messages {
   min-height: 380px;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
 }
 
 /*# sourceMappingURL=theme.css.map */
